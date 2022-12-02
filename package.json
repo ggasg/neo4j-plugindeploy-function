@@ -1,0 +1,21 @@
+{
+  "name": "gcp-event-func",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx functions-framework --target=pluginDeploy --signature-type=event",
+    "funcStart": "nodemon -e ts --exec \"npx functions-framework --target=pluginDeploy --signature-type=event\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.1.2",
+    "google-auth-library": "^8.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
